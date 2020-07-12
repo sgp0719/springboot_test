@@ -42,4 +42,6 @@ public interface RemoteApI {
   @ApiOperation(value = "createUser")  
   @ApiResponse(code = 400, message = "Invalid user supplied")
   public ResponseEntity<User> createUser(@RequestBody @ApiParam(value = "Created user object", required = true)  User user);
+  
+  public void sysout();
 }
